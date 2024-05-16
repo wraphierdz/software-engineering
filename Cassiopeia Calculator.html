@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cassiopeia Calculator</title>
+        <style>
+            button {
+                width: 100%;
+                border-radius: 5px;
+            }
+            input{
+                border-radius: 5px;
+            }
+            .careful{
+                color:rgb(0, 0, 37);
+                background-color:aqua;
+                border-color:rgb(0, 0, 37);
+            }
+            .clear{
+                color: rgb(255, 255, 255);
+                background-color: rgb(18, 158, 158);
+            }
+            .operator{
+                color:greenyellow;
+                background-color:green;
+            }
+            .samdeng{
+                color:green;
+                background-color:greenyellow;
+            }
+            .property{
+                color:rgb(255, 255, 255);
+                background-color: grey;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th colspan="4"><input type="text" name="display"></th>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="careful">AC</button></td>
+                <td><button class="clear">C</button></td>
+                <td><button class="operator">*</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button class="operator">/</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button class="operator">+</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button class="operator">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="property">+-</button></td>
+                <td><button>0</button></td>
+                <td><button class="property">.</button></td>
+                <td><button class="samdeng">=</button></td>
+            </tr>
+        </table>
+    </body>
+
+</html>
