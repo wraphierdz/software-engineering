@@ -1,0 +1,109 @@
+body{
+    font-family: system-ui; 
+    background-color:rgb(250, 212, 166);
+    text-align: center;
+}
+.frame{
+    width:70%;
+    max-width: 600px;
+    margin: 30px auto 0;
+    background-color: bisque;
+    border: 30px double rgb(121, 29, 29);
+    border-radius: 100px;
+}
+.head-container{
+    width: 550px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: bisque;
+    padding: 10px;
+    margin: auto;
+}
+.heading-frame-top, .heading-frame-bottom{
+    width:600px;
+    max-width: 600px;
+    background-color: bisque;
+    border: 20px double rgb(121, 29, 29);
+    border-radius: 100px;
+}
+.heading-frame-top{
+    margin: 20px auto 0;
+}
+.heading-frame-bottom{
+    margin: 0 auto 20px;
+}
+.intro-img{
+    width: 200px;
+    height: 200px;
+    margin: -13px auto 0px;
+}
+.intro{
+    margin:20px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0px auto 2px;
+}
+h2{
+    margin: 2px auto 10px;
+    font-size: 25px;
+}
+#line1, #line2{
+    margin: 3px;
+    font-size: 15px;
+}
+#line2{
+    margin-bottom: 25px;
+}
+.measure-opt{
+    margin-bottom: 20px;
+}
+.measure-btn{
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
+    margin: 0px 20px 10px;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    background-color: rgb(121, 29, 29);
+    border: none;
+    color: bisque;
+    cursor: pointer
+}
+.measure{
+    margin: 20px auto;
+    /* border-right: 30px double rgb(121, 29, 29);
+    border-left: 30px double rgb(121, 29, 29); */
+    border-bottom: 30px double rgb(121, 29, 29);
+    max-width: 500px;
+    padding-bottom: 10px;
+}
+.triangle{
+    padding: 7px 0 5px;
+    font-size: 17px;
+}
+#triangle-img{
+    width: 295px;
+    height: 272px;
+}
+.inputan{
+    width: 51px;
+    height:17px;
+    background-color: bisque;
+    border-radius: 5px;
+    border: 3px solid rgb(121, 29, 29);
+}
+.tinggi{
+    transform: translate(42px, -130px);
+    letter-spacing: 1px;
+}
+.rumus{
+    width: 200px;
+    height: 38px;
+    padding: 5px 10px;
+    background-color: bisque;
+    border-radius: 25px;
+    color: rgb(121, 29, 29);
+    margin: 0 auto;
+}
