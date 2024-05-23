@@ -98,6 +98,14 @@ h2{
     transform: translate(42px, -130px);
     letter-spacing: 1px;
 }
+.s2{
+    transform: translate(140px, -190px);
+    letter-spacing: 1px;
+}
+.s3{
+    transform: translate(-140px, -220px);
+    letter-spacing: 1px;
+}
 .rumus{
     width: 200px;
     height: 38px;
@@ -108,6 +116,18 @@ h2{
     margin: 0 auto;
 }
 #calculate{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(121, 29, 29);
+    color: bisque;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    border: none;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+#calculate-peri{
     width: 100px;
     height: 40px;
     background-color: rgb(121, 29, 29);
