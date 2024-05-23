@@ -107,3 +107,18 @@ h2{
     color: rgb(121, 29, 29);
     margin: 0 auto;
 }
+#calculate{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(121, 29, 29);
+    color: bisque;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    border: none;
+    margin: 15px;
+}
+.calculation{
+    font-size: 19px;
+    font-weight: 600;
+}
