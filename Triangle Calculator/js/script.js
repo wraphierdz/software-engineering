@@ -1,30 +1,36 @@
-// let area;
-// let perimeter;
-// function mode(){
-//     document.getElementById('area').addEventListener('click', function() {
-//         window.location.href = 'Luas.html';});
-// }
-
-// function getArea(){
-    let alas = parseFloat(document.getElementById('a-input').value);
-    let tinggi = parseFloat(document.getElementById('t-input').value);
-
-//     if (isNaN(alas) || isNaN(tinggi) || alas <= 0 || tinggi <= 0){
-//         document.getElementById('luas').textContent = "Angka harus positif";
-//         return;
-//     }
-
-    let luas = 0.5 * alas * tinggi;
-    // document.getElementById('luas').textContent = 'L = ${luas}';
-// }
-
-// function showParam(){
-//     document.getElementById('a-input').textContent = 'a = ${alas}';
-//     document.getElementById('t-input').textContent = 't = ${tinggi}';
-// }
-
-element.addEventListener("click", getArea);
-
-function getArea() {
-  document.getElementById("calculate").innerHTML = "Luas = ${luas}";
+function updateInputs() {
+    const base = parseFloat(document.getElementById('a-input').value);
+    const height = parseFloat(document.getElementById('t-input').value);
+    const displayElement = document.getElementById('input-display');
+    
+    if (!isNaN(base) || !isNaN(height)) {
+        displayElement.textContent = `a (alas) = ${base} | t (tinggi) = ${height}`;
+    } else {
+        displayElement.textContent = '';
+    }
 }
+
+function calculateArea() {
+    const base = parseFloat(document.getElementById('a-input').value);
+    const height = parseFloat(document.getElementById('t-input').value);
+
+    if (isNaN(base) || isNaN(height) || base <= 0 || height <= 0) {
+        alert('Please enter valid positive numbers for base and height.');
+        return;
+    }
+
+    const area = 0.5 * base * height;
+
+    let resultDiv = document.getElementById('result');
+    if (!resultDiv) {
+        resultDiv = document.createElement('div');
+        resultDiv.id = 'result';
+        document.querySelector('.calculation').appendChild(resultDiv);
+    }
+    resultDiv.textContent = `L = ${area}`;
+}
+
+document.getElementById('a-input').addEventListener('input', updateInputs);
+document.getElementById('t-input').addEventListener('input', updateInputs);
+
+document.getElementById('calculate').addEventListener('click', calculateArea);

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivameter-Find Area</title>
+    <title>Trivameter-Find Perimeter</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div class="heading-frame">
         <div class="heading-frame-top"></div>
         <div class="head-container">
-        <h1 class="head-area">Find The Area</h1>
+        <h1 class="head-area">Find The Perimeter</h1>
         </div>
         <div class="heading-frame-bottom"></div>
     </div>
@@ -19,23 +19,24 @@
 
     <section>
     <div class="triangle">
-        <img id ="triangle-img" src="assets/area.png" alt="triangle area property">
+        <img id ="triangle-img" src="assets/perimeter.png" alt="triangle area property">
         <form>
-            <div class="alas">a: <input class="inputan" id= "a-input" type="number" name="alas" placeholder="Alas"></div>
-            <div class="tinggi">t: <input class="inputan" id="t-input" type="number" name="tinggi" placeholder="Tinggi"></div>
+            <div class="alas">S1: <input class="inputan" id= "a-input" type="number" name="s1" placeholder="Sisi 1"></div>
+            <div class="tinggi">S2: <input class="inputan" id="t-input" type="number" name="s2" placeholder="Sisi 2"></div>
+            <div class="tinggi">S3: <input class="inputan" id="t-input" type="number" name="s3" placeholder="Sisi 3"></div>
         </form>
     </div>
     </section>
 
     <section>
-        <div class="rumus"><h2>L = 1/2 x a x t</h2></div>
+        <div class="rumus"><h2>K = S1 + S2 + S3</h2></div>
     </section>
 
     <section>
         <div class="frame">
             <div class="calculation">
-                <p>L = Area (Luas)</p>
-                <p>L = 1/2 x a x t</p>
+                <p>K = Perimeter (Keliling)</p>
+                <p>K = S1 + S2 + S3</p>
                 <div id="input-display"></div>
                 <button type="button" id="calculate">Calculate</button>
                 <div id="result"></div>

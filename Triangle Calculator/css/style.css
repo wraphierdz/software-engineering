@@ -117,8 +117,33 @@ h2{
     border-radius: 20px;
     border: none;
     margin: 15px;
+    margin-bottom: 0px;
 }
 .calculation{
     font-size: 19px;
     font-weight: 600;
+}
+#result{
+    margin: 20px auto;
+    width: 250px;
+    height: 60px;
+    border: 3px solid  rgb(121, 29, 29);
+    border-radius: 20px;
+    font-size: x-large;
+    align-content: center;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: bisque;
+}
+a:visited{
+    color:bisque;
+}
+a:hover{
+    color:rgb(250, 212, 166);
+}
+a:active{
+    color:bisque;
 }
